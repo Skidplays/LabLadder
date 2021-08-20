@@ -71,5 +71,6 @@ def process_log(client_log):
                 index += 1
                 break
     lab_run_list.sort()
-    return lab_run_list[0]
-
+    if lab_run_list:
+      return lab_run_list[0]
+    return False
